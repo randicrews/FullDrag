@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <script src="https://kit.fontawesome.com/504ea75c01.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>RDPR API</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;500;700&family=Fugaz+One&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="img/logo.png" alt="" class="logo">
+    <div class="inputs">
+      <fieldset>
+          <input class= "top" name="queen" type="text" placeholder="queen name" autofocus>
+          <button type="button" name="button" id="request">SASHAY</button>
+      </fieldset>
+      <fieldset>
+        <input class="top" name="season" type="text" placeholder="season" autofocus id="season">
+        <button type="button" name="button" id="reqSeason">SHANTE</button>
+      </fieldset>
+    </div>
+    <main>
+    <section>
+    <div id="queen" class="queen sneaky">
+      <img src="" alt="" id="crown">
+      <h2 id="dragName"></h2>
+      <span>made their first appearance on the show at age</span>
+      <h4 id="age"></h4>
+    </div>
+
+    <div id="first" class="so sneaky">
+      <span id="outcome1"></span>
+      <span id="season1"></span>
+    </div>
+    <div id="return" class="so sneaky">
+      <span id="outcome2"></span>
+      <span id="season2"></span>
+    </div>
+    </section>
+
+    <div id="seasonal" class="seasonal sneaky">
+      <span>SEASON</span>
+      <span id="sNum"></span>
+      <ul id="seasonalQueens"></ul>
+    </div>
+  </main>
+  <aside class="vote">
+    <h3>SHE SAID WHAT?!</h3>
+    <fieldset class="saywhat">
+      <form action="/queens/" method="POST">
+        <input type="text" placeholder="queen name" name="queenSaid">
+        <input type="text" placeholder="quote" name="queenQuote">
+        <button type="submit">SHEDONEALREADYHADHERSES</button>
+      </form>
+    </fieldset>
+    <ul class="queens">
+      <% for(var i=0; i<queens.length; i++) {%>
+        <li class="message">
+          <!-- <span><i class="fa-solid fa-caret-up" aria-hidden="true"></i></span> -->
+          <span class="name"><%= queens[i].queenSaid %></span>
+          <span class="quote"><%= queens[i].queenQuote %></span>
+          <!-- <span class="sneaky"><%= queens[i].fans %></span> -->
+          <!-- <span><i class="fa-solid fa-caret-down" aria-hidden="true"></i></span> -->
+        </li>
+      <% } %>
+    </ul>
+  </aside>
+  <script src="main.js"></script>
+
+</body>
+</html>

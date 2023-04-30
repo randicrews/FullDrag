@@ -1,0 +1,193 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  font-size: 62.5%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fugaz One'
+
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img.logo{
+  width: 50%;
+  padding: 20px;
+}
+.inputs{
+  display: flex;
+  border: none;
+}
+fieldset{
+  border: none;
+}
+input{
+  background: black;
+  border: solid white 1px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+}
+input.top:focus{
+  filter: drop-shadow(0px 0px 3px plum);
+  background: rgba(221, 160, 221, 0.1);
+  color: white;
+}
+input:focus::placeholder{
+  color: white;
+}
+button{
+  background: white;
+  border: none;
+  color: black;
+  border-radius: 3px;
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  margin: 5px;
+  background: black;
+  border: white solid 1px;
+  color: rgba(255, 255, 255, 0.25);
+  -webkit-text-stroke: 1px white;
+
+}
+button:hover{
+  /* background: black;
+  border: white solid 1px;
+  color: white; */
+  border-radius: 3px;
+  font-family: 'Bebas Neue';
+  -webkit-text-stroke: .5px black;
+  background: white;
+  /* border: black solid 2px; */
+  color: black;
+  border-radius: 3px;
+}
+.queen{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.so{
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.so+.so{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+main span{
+  font-family: 'Bebas Neue', cursive;
+}
+img#crown{
+  width: 100px;
+  height: auto;
+  margin: 0px;
+}
+h2{
+  font-size: 4rem;
+  margin: 0px;
+}
+.queen span{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+h4{
+  font-size: 3rem;
+  margin: 0px;
+}
+.seasonal{
+  width: auto;
+  height: auto;
+  background: rgba(194, 140, 194, 0.866);
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: double 13px black;
+  margin: 20px;
+}
+.seasonal span{
+  font-size: 3rem;
+  color: black;
+}
+#seasonalQueens{
+  list-style: none !important;
+  color: black
+}
+.vote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(221, 160, 221, 0.6);
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px #000000;
+}
+.saywhat fieldset form input:focus{
+  filter: drop-shadow(0px 0px 3px plum);
+  color: white;
+}
+h3{
+  font-size: 2rem;
+  color: black;
+  /* -webkit-text-stroke: 1px rgb(255, 255, 255); */
+  filter: drop-shadow(0px 0px 2px rgb(255, 213, 255));
+  margin: 0px;
+}
+/* li.seasonal{
+  list-style-image: url('')
+} */
+.sneaky{
+  display: none;
+}
+ul{
+  padding: 0px;
+}
+li.message{
+  list-style: none !important;
+  color: black;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-top: 3px rgba(255, 255, 255, 0.2) dotted;
+}
+span.quote{
+  color: white;
+}
+span.name{
+  color: rgba(0, 0, 0, 0.764);
+}
+
