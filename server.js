@@ -14,7 +14,7 @@ app.listen(9000), () => {
         db = client.db(dbName);
         console.log("Connected to `" + dbName + "`!");
     });
-});
+};
 app.use(express.static('public'))
 
 const queens = {
