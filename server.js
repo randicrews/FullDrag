@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 var db
-const url = "mongodb+srv://thisisanemailaddressbeepboop:kIDoMvB8BKctOtyB@cluster0.it9dctl.mongodb.net/?retryWrites=true&w=majority"
+const url = "mongodb+srv://thisisanemailaddressbeepboop:kIDoMvB8BKctOtyB@cluster0.it9dctl.mongodb.net/rpdr?retryWrites=true&w=majority"
 const dbName = "RPDR";
 
 app.listen(9000, () => {
