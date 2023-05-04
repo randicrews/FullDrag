@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 var db
 const url = "mongodb+srv://thisisanemailaddressbeepboop:kIDoMvB8BKctOtyB@cluster0.it9dctl.mongodb.net/RPDR?retryWrites=true&w=majority"
-const dbName = "RPDR";
+const dbName = "RPDR"; 
 
 app.listen(9000), () => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
@@ -1372,10 +1372,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  db.collection('queens').find().sort({fans:-1}).toArray((err, result) => {
-    if (err) return console.log(err)
-    res.render('index.ejs', {queens: result})
-  })
+    res.render('index.ejs', {queens: res})
 })
 
 app.get('/api/:name',(request,response)=>{
