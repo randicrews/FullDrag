@@ -3,10 +3,10 @@ const app = express()
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 var db
-const url = "mongodb+srv://thisisanemailaddressbeepboop:kIDoMvB8BKctOtyB@cluster0.it9dctl.mongodb.net/RPDR?retryWrites=true&w=majority"
-const dbName = "RPDR"; 
+const url = "mongodb+srv://thisisanemailaddressbeepboop:kIDoMvB8BKctOtyB@cluster0.it9dctl.mongodb.net/?retryWrites=true&w=majority"
+const dbName = "RPDR";
 
-app.listen(9000), () => {
+app.listen(9000, () => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
         if(error) {
             throw error;
@@ -14,7 +14,7 @@ app.listen(9000), () => {
         db = client.db(dbName);
         console.log("Connected to `" + dbName + "`!");
     });
-};
+});
 app.use(express.static('public'))
 
 const queens = {
@@ -1372,9 +1372,9 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  db.collection('queens').find().toArray((err, queens) => {
+  db.collection('queens').find().sort({fans:-1}).toArray((err, result) => {
     if (err) return console.log(err)
-    res.render('index.ejs', {queens: queens})
+    res.render('index.ejs', {queen: result})
   })
 })
 

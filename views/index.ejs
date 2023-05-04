@@ -58,12 +58,11 @@
       </form>
     </fieldset>
     <ul class="queens">
-      <% for(var i=0; i<queens.length; i++) {%>
+      <% for(var i=0; i<queen.length; i++) {%>
         <li class="message">
           <!-- <span><i class="fa-solid fa-caret-up" aria-hidden="true"></i></span> -->
-          <span class="name"><%= queens[i].queenSaid %></span>
-          <span class="quote"><%= queens[i].queenQuote %></span>
-          <!-- <span class="sneaky"><%= queens[i].fans %></span> -->
+          <span class="name"><%= queen[i].queenSaid %></span>
+          <span class="quote"><%= queen[i].queenQuote %></span>
           <!-- <span><i class="fa-solid fa-caret-down" aria-hidden="true"></i></span> -->
         </li>
       <% } %>
