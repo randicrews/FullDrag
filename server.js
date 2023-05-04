@@ -1372,7 +1372,10 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+  db.collection('queens').find().toArray((err, result) => {
+    if (err) return console.log(err)
     res.render('index.ejs', {queens: res})
+  })
 })
 
 app.get('/api/:name',(request,response)=>{
