@@ -1372,7 +1372,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  db.collection('queens').find().sort({fans:-1}).toArray((err, result) => {
+  db.collection('queens2').find().toArray((err, result) => {
     if (err) return console.log(err)
     res.render('index.ejs', {queen: result})
   })
