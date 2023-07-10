@@ -1,3 +1,14 @@
+#RPDR API
+
+## USING 
+- EJS
+- CSS
+- JAVASCRIPT
+- NODE.JS
+- MONGO DB 
+- EXPRESS
+
+
 ## Installation
 
 1. Clone repo
@@ -7,5 +18,3 @@
 
 1. run `node server.js`
 2. Navigate to `localhost:9000`
-
-# testtest
